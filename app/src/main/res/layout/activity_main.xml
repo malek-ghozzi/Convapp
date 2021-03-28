@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion Monnaie"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/lck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titre"
+        android:text="Long Click"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="238dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/radiogrp"
+        android:layout_marginTop="60dp"
+        android:text="Convertir"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:onClick="@string/auClick"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/aconv"
+        android:textSize="32dp"
+        android:inputType="number"
+        android:hint="saissir le montant"
+        android:layout_below="@+id/lck"
+        android:layout_marginTop="30dp"
+
+        />
+    <RadioGroup
+
+        android:layout_width="324dp"
+        android:layout_height="88dp"
+        android:id="@+id/radiogrp"
+        android:layout_below="@+id/aconv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rdbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="€ TO DT"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DT TO €"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/espaceres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Résultat:"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+
+        />
+
+</RelativeLayout>

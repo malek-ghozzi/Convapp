@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Convtempact">
+
+    <TextView
+        android:id="@+id/titre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion temperature"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:text="Convertir"
+        android:textSize="15sp"
+        android:layout_width="238dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/radiogrp2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerVertical="true"
+        android:onClick="@string/auClicktmp"
+
+    />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/aconv2"
+        android:textSize="32dp"
+        android:inputType="number"
+        android:hint="saissir le montant"
+        android:layout_below="@+id/titre2"
+        android:layout_marginTop="30dp"
+
+        />
+    <RadioGroup
+
+        android:layout_width="324dp"
+        android:layout_height="88dp"
+        android:id="@+id/radiogrp2"
+        android:layout_below="@+id/aconv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rdbtn12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="F TO C"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbtn22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C TO F"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/espaceres2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn2"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Résultat:"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+
+        />
+
+</RelativeLayout>
+
+
+
+
